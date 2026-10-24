@@ -4,7 +4,7 @@
 
 ## Repository
 
-Package: `@ankhorage/supabase`
+Package: `@ankhorage/infra-supabase`
 
 Supabase platform service adapter for provider-neutral Ankhorage infrastructure.
 
