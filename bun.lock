@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@ankhorage/supabase",
+      "name": "@ankhorage/infra-supabase",
       "dependencies": {
         "@ankhorage/contracts": "^22.0.3",
         "@ankhorage/supabase-vault": "^0.3.3",
