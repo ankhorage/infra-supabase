@@ -1,5 +1,11 @@
 # @ankhorage/supabase
 
+## 0.5.15
+
+### Patch Changes
+
+- 0395c77: Rename the Supabase infrastructure adapter package.
+
 ## 0.5.14
 
 ### Patch Changes
