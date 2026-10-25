@@ -4,8 +4,8 @@ import type {
   InfraWorkloadValue,
 } from '@ankhorage/contracts/infra';
 
-import { SUPABASE_RECOVERY_SCHEMA, SUPABASE_RECOVERY_STATE_TABLE } from '../constants/recovery';
-import { createSupabaseS3Values } from './createSupabaseS3Values';
+import { SUPABASE_RECOVERY_SCHEMA, SUPABASE_RECOVERY_STATE_TABLE } from '../constants/recovery.js';
+import { createSupabaseS3Values } from './createSupabaseS3Values.js';
 
 const RESTORE_POINTER_ATTEMPTS = 60;
 const RESTORE_POINTER_DELAY_SECONDS = 2;

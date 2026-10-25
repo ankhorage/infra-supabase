@@ -1,6 +1,6 @@
 import type { InfraResult } from '@ankhorage/contracts/infra';
 
-import type { SupabaseBootstrapCredentials } from '../../../types/supabase';
+import type { SupabaseBootstrapCredentials } from '../../../types/supabase.js';
 
 /*** Validate the provider-owned Supabase bootstrap bundle without exposing privileged values. */
 export function validateSupabaseBootstrapCredentials(

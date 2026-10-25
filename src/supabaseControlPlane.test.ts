@@ -1,6 +1,6 @@
 import { expect, it } from 'bun:test';
 
-import { createFetchSupabaseControlPlane } from './index';
+import { createFetchSupabaseControlPlane } from './index.js';
 
 it('authenticates bucket operations without exposing privileged request or response data', async () => {
   const requests: { readonly url: string; readonly init?: RequestInit }[] = [];

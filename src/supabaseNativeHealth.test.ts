@@ -1,7 +1,7 @@
 import type { InfraExecutionContext, InfraResult } from '@ankhorage/contracts/infra';
 import { expect, it } from 'bun:test';
 
-import { createSupabaseWorkloads } from './features/platform-infrastructure/domain/createSupabaseWorkloads';
+import { createSupabaseWorkloads } from './features/platform-infrastructure/domain/createSupabaseWorkloads.js';
 
 it('uses current image-native health commands without resolving Realtime credentials', () => {
   const workloads = createSupabaseWorkloads(createContext());

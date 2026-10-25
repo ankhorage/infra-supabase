@@ -1,8 +1,8 @@
 import type { InfraExecutionContext, InfraOutput, InfraResult } from '@ankhorage/contracts/infra';
 import { expect, it } from 'bun:test';
 
-import type { SupabaseControlPlane, SupabaseControlPlaneRequest } from './index';
-import { createInfraAdapter } from './index';
+import type { SupabaseControlPlane, SupabaseControlPlaneRequest } from './index.js';
+import { createInfraAdapter } from './index.js';
 
 it('omits Supabase Storage when another provider owns object storage', async () => {
   const controlPlane = new FakeSupabaseControlPlane();

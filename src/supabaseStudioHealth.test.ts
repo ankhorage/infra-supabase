@@ -1,7 +1,7 @@
 import type { InfraExecutionContext } from '@ankhorage/contracts/infra';
 import { expect, it } from 'bun:test';
 
-import { createInfraAdapter } from './index';
+import { createInfraAdapter } from './index.js';
 
 it('projects the current self-hosted Studio native health command', async () => {
   const workloads = await createInfraAdapter().desiredWorkloadsAsync(createContext());
