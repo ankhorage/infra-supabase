@@ -14,7 +14,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v0.5.16",
+      "value": "v0.6.0",
       "color": "cb3837"
     },
     {
@@ -435,7 +435,7 @@
       "modulePath": "src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts",
       "sourceLocation": {
         "filePath": "src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts",
-        "line": 12,
+        "line": 15,
         "column": 1
       },
       "exportPaths": ["src/index.ts"],
@@ -629,7 +629,7 @@
       "description": "Create a sanitized HTTP adapter for self-hosted Supabase health and bucket lifecycle.",
       "sourceLocation": {
         "filePath": "src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts",
-        "line": 12,
+        "line": 15,
         "column": 1
       }
     },
@@ -638,7 +638,7 @@
       "description": "List storage buckets without returning privileged request metadata.",
       "sourceLocation": {
         "filePath": "src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts",
-        "line": 36,
+        "line": 39,
         "column": 1
       }
     },
@@ -647,7 +647,7 @@
       "description": "Narrow one untrusted storage response item to its public bucket name.",
       "sourceLocation": {
         "filePath": "src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts",
-        "line": 55,
+        "line": 58,
         "column": 1
       }
     },
@@ -656,7 +656,7 @@
       "description": "Execute one response-body-free control-plane request.",
       "sourceLocation": {
         "filePath": "src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts",
-        "line": 61,
+        "line": 64,
         "column": 1
       }
     },
@@ -665,7 +665,7 @@
       "description": "Execute one authenticated request and expose only the trusted Response boundary.",
       "sourceLocation": {
         "filePath": "src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts",
-        "line": 73,
+        "line": 76,
         "column": 1
       }
     },
@@ -674,7 +674,7 @@
       "description": "Reject a failed HTTP request without leaking response or credential detail.",
       "sourceLocation": {
         "filePath": "src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts",
-        "line": 98,
+        "line": 101,
         "column": 1
       }
     },
@@ -683,7 +683,7 @@
       "description": "Reject a malformed storage response without exposing its body.",
       "sourceLocation": {
         "filePath": "src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts",
-        "line": 112,
+        "line": 115,
         "column": 1
       }
     },
@@ -935,7 +935,7 @@
       "description": "Create the scheduled logical Postgres backup workload when backup intent is configured.",
       "sourceLocation": {
         "filePath": "src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts",
-        "line": 177,
+        "line": 180,
         "column": 1
       }
     },
@@ -944,7 +944,7 @@
       "description": "Create one literal workload value.",
       "sourceLocation": {
         "filePath": "src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts",
-        "line": 216,
+        "line": 219,
         "column": 1
       }
     },
@@ -953,7 +953,7 @@
       "description": "Create one execution-only Supabase bootstrap credential reference.",
       "sourceLocation": {
         "filePath": "src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts",
-        "line": 221,
+        "line": 224,
         "column": 1
       }
     },

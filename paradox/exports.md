@@ -4,7 +4,7 @@
 
 Kind: `function`
 Module: `src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts`
-Source: `src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts:12:1`
+Source: `src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts:15:1`
 
 Create a sanitized HTTP adapter for self-hosted Supabase health and bucket lifecycle.
 

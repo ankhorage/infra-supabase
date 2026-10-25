@@ -1,5 +1,11 @@
 # @ankhorage/supabase
 
+## 0.6.0
+
+### Minor Changes
+
+- ea99aec: Update the Supabase infrastructure adapter to the canonical Contracts 26 descriptor catalog and publish Node ESM-compatible output.
+
 ## 0.5.16
 
 ### Patch Changes
