@@ -4,7 +4,7 @@ import type {
   InfraResult,
 } from '@ankhorage/contracts/infra';
 
-import type { SupabaseDesiredState } from '../../../types/supabase';
+import type { SupabaseDesiredState } from '../../../types/supabase.js';
 
 /*** Resolve the deduplicated Supabase platform, stable ownership and persistent buckets. */
 export function resolveSupabaseDesiredState(

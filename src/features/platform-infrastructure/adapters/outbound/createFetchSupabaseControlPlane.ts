@@ -1,6 +1,9 @@
 import type { InfraResult } from '@ankhorage/contracts/infra';
 
-import type { SupabaseControlPlane, SupabaseControlPlaneRequest } from '../../../../types/supabase';
+import type {
+  SupabaseControlPlane,
+  SupabaseControlPlaneRequest,
+} from '../../../../types/supabase.js';
 
 interface FetchSupabaseControlPlaneOptions {
   readonly fetcher?: FetchLike;

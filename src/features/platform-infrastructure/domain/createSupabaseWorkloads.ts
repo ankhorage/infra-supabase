@@ -11,21 +11,21 @@ import {
   SUPABASE_DATABASE_REALTIME_SQL,
   SUPABASE_DATABASE_ROLES_SQL,
   SUPABASE_DATABASE_WEBHOOKS_SQL,
-} from '../constants/databaseBootstrap';
-import { SUPABASE_DATA_RESTORE_WORKLOAD_ID } from '../constants/recovery';
+} from '../constants/databaseBootstrap.js';
+import { SUPABASE_DATA_RESTORE_WORKLOAD_ID } from '../constants/recovery.js';
 import {
   SUPABASE_BOOTSTRAP_CREDENTIAL,
   SUPABASE_ENVOY_CONFIG,
   SUPABASE_ENVOY_CONFIG_WITHOUT_STORAGE,
   SUPABASE_IMAGES,
-} from '../constants/supabase';
-import { createSupabaseAuthWorkload } from './createSupabaseAuthWorkload';
-import { createSupabaseDatabaseBackupWorkload } from './createSupabaseDatabaseBackupWorkload';
-import { createSupabaseDatabaseDataRestoreWorkload } from './createSupabaseDatabaseDataRestoreWorkload';
-import { createSupabaseDatabasePersistence } from './createSupabaseDatabasePersistence';
-import { createSupabaseDatabaseRestore } from './createSupabaseDatabaseRestore';
-import { createSupabaseOperationalWorkloads } from './createSupabaseOperationalWorkloads';
-import { createSupabaseStorageWorkload } from './createSupabaseStorageWorkload';
+} from '../constants/supabase.js';
+import { createSupabaseAuthWorkload } from './createSupabaseAuthWorkload.js';
+import { createSupabaseDatabaseBackupWorkload } from './createSupabaseDatabaseBackupWorkload.js';
+import { createSupabaseDatabaseDataRestoreWorkload } from './createSupabaseDatabaseDataRestoreWorkload.js';
+import { createSupabaseDatabasePersistence } from './createSupabaseDatabasePersistence.js';
+import { createSupabaseDatabaseRestore } from './createSupabaseDatabaseRestore.js';
+import { createSupabaseOperationalWorkloads } from './createSupabaseOperationalWorkloads.js';
+import { createSupabaseStorageWorkload } from './createSupabaseStorageWorkload.js';
 
 /*** Project the selected Supabase platform into one ordered runtime-neutral workload graph. */
 export function createSupabaseWorkloads(

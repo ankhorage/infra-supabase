@@ -4,9 +4,12 @@ import type {
   InfraWorkloadSpec,
 } from '@ankhorage/contracts/infra';
 
-import { SUPABASE_DATA_RESTORE_WORKLOAD_ID, SUPABASE_RECOVERY_SCHEMA } from '../constants/recovery';
-import { SUPABASE_BOOTSTRAP_CREDENTIAL, SUPABASE_IMAGES } from '../constants/supabase';
-import { createSupabaseS3Values } from './createSupabaseS3Values';
+import {
+  SUPABASE_DATA_RESTORE_WORKLOAD_ID,
+  SUPABASE_RECOVERY_SCHEMA,
+} from '../constants/recovery.js';
+import { SUPABASE_BOOTSTRAP_CREDENTIAL, SUPABASE_IMAGES } from '../constants/supabase.js';
+import { createSupabaseS3Values } from './createSupabaseS3Values.js';
 
 const DEFAULT_BACKUP_INTERVAL_HOURS = 24;
 const INTERNAL_SCHEMA_PATTERN = [

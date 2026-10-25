@@ -5,8 +5,8 @@ import type {
   InfraWorkloadValue,
 } from '@ankhorage/contracts/infra';
 
-import { SUPABASE_BOOTSTRAP_CREDENTIAL, SUPABASE_IMAGES } from '../constants/supabase';
-import { createSupabaseS3Values } from './createSupabaseS3Values';
+import { SUPABASE_BOOTSTRAP_CREDENTIAL, SUPABASE_IMAGES } from '../constants/supabase.js';
+import { createSupabaseS3Values } from './createSupabaseS3Values.js';
 
 /*** Create Supabase Storage using either retained file storage or the selected S3 backend. */
 export function createSupabaseStorageWorkload(

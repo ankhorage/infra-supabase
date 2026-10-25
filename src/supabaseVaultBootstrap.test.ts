@@ -2,7 +2,7 @@ import type { InfraExecutionContext, InfraResult } from '@ankhorage/contracts/in
 import { SUPABASE_VAULT_MIGRATION_SQL } from '@ankhorage/supabase-vault/migrations';
 import { expect, it } from 'bun:test';
 
-import { createInfraAdapter } from './index';
+import { createInfraAdapter } from './index.js';
 
 it('adds the canonical Vault migration to the Supabase database bootstrap when selected', async () => {
   const adapter = createInfraAdapter();

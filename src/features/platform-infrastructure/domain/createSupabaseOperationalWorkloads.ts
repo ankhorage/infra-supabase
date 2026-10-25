@@ -4,7 +4,7 @@ import type {
   InfraWorkloadSpec,
 } from '@ankhorage/contracts/infra';
 
-import { SUPABASE_BOOTSTRAP_CREDENTIAL, SUPABASE_IMAGES } from '../constants/supabase';
+import { SUPABASE_BOOTSTRAP_CREDENTIAL, SUPABASE_IMAGES } from '../constants/supabase.js';
 
 /*** Create the operational services supporting Storage and the self-hosted Studio. */
 export function createSupabaseOperationalWorkloads(

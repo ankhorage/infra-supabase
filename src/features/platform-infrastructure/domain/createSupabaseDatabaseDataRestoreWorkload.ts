@@ -8,9 +8,9 @@ import {
   SUPABASE_DATA_RESTORE_WORKLOAD_ID,
   SUPABASE_RECOVERY_SCHEMA,
   SUPABASE_RECOVERY_STATE_TABLE,
-} from '../constants/recovery';
-import { SUPABASE_BOOTSTRAP_CREDENTIAL, SUPABASE_IMAGES } from '../constants/supabase';
-import { createSupabaseS3Values } from './createSupabaseS3Values';
+} from '../constants/recovery.js';
+import { SUPABASE_BOOTSTRAP_CREDENTIAL, SUPABASE_IMAGES } from '../constants/supabase.js';
+import { createSupabaseS3Values } from './createSupabaseS3Values.js';
 
 const DATA_RESTORE_READY_FILE = '/tmp/ankhorage-data-restore-ready';
 const RECOVERY_STATE_RELATION = `"${SUPABASE_RECOVERY_SCHEMA}"."${SUPABASE_RECOVERY_STATE_TABLE}"`;

@@ -1,7 +1,7 @@
 import type { InfraExecutionContext, InfraS3PersistenceTarget } from '@ankhorage/contracts/infra';
 import { expect, it } from 'bun:test';
 
-import { createInfraAdapter } from './index';
+import { createInfraAdapter } from './index.js';
 
 const backupTarget = {
   endpoint: 'https://storage.example.test',

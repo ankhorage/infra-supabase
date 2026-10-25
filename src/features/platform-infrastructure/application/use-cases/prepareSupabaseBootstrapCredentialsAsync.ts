@@ -2,10 +2,10 @@ import { createHmac, randomBytes } from 'node:crypto';
 
 import type { InfraExecutionContext, InfraResult } from '@ankhorage/contracts/infra';
 
-import type { SupabaseBootstrapCredentials } from '../../../../types/supabase';
-import { SUPABASE_BOOTSTRAP_CREDENTIAL } from '../../constants/supabase';
-import { validateSupabaseBootstrapCredentials } from '../../utils/validateSupabaseBootstrapCredentials';
-import { resolveSupabaseBootstrapCredentialsAsync } from './resolveSupabaseBootstrapCredentialsAsync';
+import type { SupabaseBootstrapCredentials } from '../../../../types/supabase.js';
+import { SUPABASE_BOOTSTRAP_CREDENTIAL } from '../../constants/supabase.js';
+import { validateSupabaseBootstrapCredentials } from '../../utils/validateSupabaseBootstrapCredentials.js';
+import { resolveSupabaseBootstrapCredentialsAsync } from './resolveSupabaseBootstrapCredentialsAsync.js';
 
 const SUPABASE_JWT_LIFETIME_SECONDS = 5 * 365 * 24 * 60 * 60;
 

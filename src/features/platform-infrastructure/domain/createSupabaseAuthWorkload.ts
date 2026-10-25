@@ -5,7 +5,7 @@ import type {
   InfraWorkloadValue,
 } from '@ankhorage/contracts/infra';
 
-import { SUPABASE_BOOTSTRAP_CREDENTIAL, SUPABASE_IMAGES } from '../constants/supabase';
+import { SUPABASE_BOOTSTRAP_CREDENTIAL, SUPABASE_IMAGES } from '../constants/supabase.js';
 
 /*** Create the GoTrue authentication workload from the external Auth URL and authored sign-up policy. */
 export function createSupabaseAuthWorkload(

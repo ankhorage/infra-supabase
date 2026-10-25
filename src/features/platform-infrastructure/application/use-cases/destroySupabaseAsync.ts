@@ -6,10 +6,10 @@ import type {
   InfraResult,
 } from '@ankhorage/contracts/infra';
 
-import type { SupabaseControlPlane } from '../../../../types/supabase';
-import { resolveSupabaseDesiredState } from '../../domain/resolveSupabaseDesiredState';
-import { resolveSupabaseControlPlaneUrl } from '../../utils/resolveSupabaseControlPlaneUrl';
-import { resolveSupabaseBootstrapCredentialsAsync } from './resolveSupabaseBootstrapCredentialsAsync';
+import type { SupabaseControlPlane } from '../../../../types/supabase.js';
+import { resolveSupabaseDesiredState } from '../../domain/resolveSupabaseDesiredState.js';
+import { resolveSupabaseControlPlaneUrl } from '../../utils/resolveSupabaseControlPlaneUrl.js';
+import { resolveSupabaseBootstrapCredentialsAsync } from './resolveSupabaseBootstrapCredentialsAsync.js';
 
 /*** Remove only explicitly confirmed persistent buckets and retain all other provider data. */
 export async function destroySupabaseAsync(

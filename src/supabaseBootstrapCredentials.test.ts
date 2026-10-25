@@ -9,7 +9,7 @@ import type {
 } from '@ankhorage/contracts/infra';
 import { expect, it } from 'bun:test';
 
-import { createInfraAdapter } from './index';
+import { createInfraAdapter } from './index.js';
 
 const BOOTSTRAP = { source: 'control-plane', name: 'SUPABASE_BOOTSTRAP' } as const;
 

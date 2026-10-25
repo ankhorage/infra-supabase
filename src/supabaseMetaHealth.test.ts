@@ -1,7 +1,7 @@
 import type { InfraExecutionContext, InfraResult } from '@ankhorage/contracts/infra';
 import { expect, it } from 'bun:test';
 
-import { createSupabaseOperationalWorkloads } from './features/platform-infrastructure/domain/createSupabaseOperationalWorkloads';
+import { createSupabaseOperationalWorkloads } from './features/platform-infrastructure/domain/createSupabaseOperationalWorkloads.js';
 
 it('uses the postgres-meta native Node health command', () => {
   const [, meta] = createSupabaseOperationalWorkloads(createContext(), 'http://127.0.0.1:54321');

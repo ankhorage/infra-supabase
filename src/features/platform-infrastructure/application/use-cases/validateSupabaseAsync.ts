@@ -1,10 +1,10 @@
 import type { InfraExecutionContext, InfraResult } from '@ankhorage/contracts/infra';
 
-import { SUPABASE_BOOTSTRAP_CREDENTIAL } from '../../constants/supabase';
-import { resolveSupabaseDesiredState } from '../../domain/resolveSupabaseDesiredState';
-import { validateSupabaseBootstrapCredentials } from '../../utils/validateSupabaseBootstrapCredentials';
-import { resolveSupabaseBootstrapCredentialsAsync } from './resolveSupabaseBootstrapCredentialsAsync';
-import { validateSupabasePersistenceCredentialsAsync } from './validateSupabasePersistenceCredentialsAsync';
+import { SUPABASE_BOOTSTRAP_CREDENTIAL } from '../../constants/supabase.js';
+import { resolveSupabaseDesiredState } from '../../domain/resolveSupabaseDesiredState.js';
+import { validateSupabaseBootstrapCredentials } from '../../utils/validateSupabaseBootstrapCredentials.js';
+import { resolveSupabaseBootstrapCredentialsAsync } from './resolveSupabaseBootstrapCredentialsAsync.js';
+import { validateSupabasePersistenceCredentialsAsync } from './validateSupabasePersistenceCredentialsAsync.js';
 
 /*** Validate Supabase selection and credentials without mutating provisionable local bootstrap state. */
 export async function validateSupabaseAsync(
