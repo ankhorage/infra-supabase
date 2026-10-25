@@ -1,5 +1,5 @@
 {
-  "name": "@ankhorage/supabase",
+  "name": "@ankhorage/infra-supabase",
   "version": "0.5.14",
   "description": "Supabase platform service adapter for provider-neutral Ankhorage infrastructure.",
   "type": "module",
@@ -9,11 +9,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ankhorage/supabase.git"
+    "url": "git+https://github.com/ankhorage/infra-supabase.git"
   },
-  "homepage": "https://github.com/ankhorage/supabase#readme",
+  "homepage": "https://github.com/ankhorage/infra-supabase#readme",
   "bugs": {
-    "url": "https://github.com/ankhorage/supabase/issues"
+    "url": "https://github.com/ankhorage/infra-supabase/issues"
   },
   "keywords": [
     "ankhorage",
@@ -61,7 +61,7 @@
   "devDependencies": {
     "@ankhorage/devtools": "^1.14.6",
     "@ankhorage/paradox": "^0.1.24",
-    "@types/bun": "^1.4.1",
+    "@types/bun": "^1.4.2",
     "@types/node": "^26.4.1",
     "typescript": "~6.0.3"
   },
