@@ -1,5 +1,11 @@
 # @ankhorage/supabase
 
+## 0.5.16
+
+### Patch Changes
+
+- b5503ed: Publish releases through npm Trusted Publishing instead of a bootstrap token.
+
 ## 0.5.15
 
 ### Patch Changes

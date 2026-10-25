@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>@ankhorage/supabase • Paradox</title>
+    <title>@ankhorage/infra-supabase • Paradox</title>
     <style>
       :root {
         color-scheme: light;
@@ -184,7 +184,7 @@
     <div class="layout">
       <aside class="sidebar">
         <p class="muted">Generated with Paradox</p>
-        <h1>@ankhorage/supabase</h1>
+        <h1>@ankhorage/infra-supabase</h1>
         <p>Supabase platform service adapter for provider-neutral Ankhorage infrastructure.</p>
         <input id="search" class="search" type="search" placeholder="Search current view" />
         <nav aria-label="Documentation sections">
@@ -299,6 +299,16 @@
               <button
                 class="nav-button"
                 type="button"
+                data-target="src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts"
+              >
+                src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts
+                <small>4 functions</small>
+              </button>
+            </li>
+            <li>
+              <button
+                class="nav-button"
+                type="button"
                 data-target="src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts"
               >
                 src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts
@@ -372,7 +382,7 @@
                 data-target="src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts"
               >
                 src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts
-                <small>13 functions</small>
+                <small>12 functions</small>
               </button>
             </li>
             <li>
@@ -403,6 +413,16 @@
               >
                 src/features/platform-infrastructure/utils/validateSupabaseBootstrapCredentials.ts
                 <small>6 functions</small>
+              </button>
+            </li>
+            <li>
+              <button
+                class="nav-button"
+                type="button"
+                data-target="src/supabaseAuthWorkload.test.ts"
+              >
+                src/supabaseAuthWorkload.test.ts
+                <small>2 functions</small>
               </button>
             </li>
             <li>
@@ -527,7 +547,7 @@
             <div class="summary">
               <div><strong>6</strong><span class="muted">public exports</span></div>
               <div><strong>0</strong><span class="muted">components</span></div>
-              <div><strong>41</strong><span class="muted">modules</span></div>
+              <div><strong>43</strong><span class="muted">modules</span></div>
               <div><strong>1</strong><span class="muted">entrypoints</span></div>
             </div>
             <h3>Entrypoints</h3>
@@ -538,10 +558,10 @@
 
           <section class="panel">
             <h2>Modules</h2>
-            <article class="item" data-search="examples/basic-usage/index.ts">
+            <article class="item" data-search="examples/basic-usage/index.ts dist/index.d.ts">
               <h3>examples/basic-usage/index.ts</h3>
               <p class="muted">Referenced module</p>
-              <p><strong>Dependencies:</strong> <span class="empty">None</span></p>
+              <p><strong>Dependencies:</strong> <code>dist/index.d.ts</code></p>
               <p><strong>Exports:</strong> <span class="empty">None</span></p>
             </article>
             <article class="item" data-search="src/constants/infra.ts infraAdapterDescriptor">
@@ -792,6 +812,18 @@
             </article>
             <article
               class="item"
+              data-search="src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts src/features/platform-infrastructure/constants/supabase.ts createSupabaseAuthWorkload"
+            >
+              <h3>src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts</h3>
+              <p class="muted">Referenced module</p>
+              <p>
+                <strong>Dependencies:</strong>
+                <code>src/features/platform-infrastructure/constants/supabase.ts</code>
+              </p>
+              <p><strong>Exports:</strong> <code>createSupabaseAuthWorkload</code></p>
+            </article>
+            <article
+              class="item"
               data-search="src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts src/features/platform-infrastructure/constants/recovery.ts src/features/platform-infrastructure/constants/supabase.ts src/features/platform-infrastructure/domain/createSupabaseS3Values.ts createSupabaseDatabaseBackupWorkload"
             >
               <h3>
@@ -886,7 +918,7 @@
             </article>
             <article
               class="item"
-              data-search="src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts src/features/platform-infrastructure/constants/databaseBootstrap.ts src/features/platform-infrastructure/constants/recovery.ts src/features/platform-infrastructure/constants/supabase.ts src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts src/features/platform-infrastructure/domain/createSupabaseDatabasePersistence.ts src/features/platform-infrastructure/domain/createSupabaseDatabaseRestore.ts src/features/platform-infrastructure/domain/createSupabaseOperationalWorkloads.ts src/features/platform-infrastructure/domain/createSupabaseStorageWorkload.ts createSupabaseWorkloads"
+              data-search="src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts src/features/platform-infrastructure/constants/databaseBootstrap.ts src/features/platform-infrastructure/constants/recovery.ts src/features/platform-infrastructure/constants/supabase.ts src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts src/features/platform-infrastructure/domain/createSupabaseDatabasePersistence.ts src/features/platform-infrastructure/domain/createSupabaseDatabaseRestore.ts src/features/platform-infrastructure/domain/createSupabaseOperationalWorkloads.ts src/features/platform-infrastructure/domain/createSupabaseStorageWorkload.ts createSupabaseWorkloads"
             >
               <h3>src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts</h3>
               <p class="muted">Referenced module</p>
@@ -895,6 +927,9 @@
                 <code>src/features/platform-infrastructure/constants/databaseBootstrap.ts</code>,
                 <code>src/features/platform-infrastructure/constants/recovery.ts</code>,
                 <code>src/features/platform-infrastructure/constants/supabase.ts</code>,
+                <code
+                  >src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts</code
+                >,
                 <code
                   >src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts</code
                 >,
@@ -963,6 +998,18 @@
               <h3>src/infraAdapter.test.ts</h3>
               <p class="muted">Referenced module</p>
               <p><strong>Dependencies:</strong> <code>src/index.ts</code></p>
+              <p><strong>Exports:</strong> <span class="empty">None</span></p>
+            </article>
+            <article
+              class="item"
+              data-search="src/supabaseAuthWorkload.test.ts src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts"
+            >
+              <h3>src/supabaseAuthWorkload.test.ts</h3>
+              <p class="muted">Referenced module</p>
+              <p>
+                <strong>Dependencies:</strong>
+                <code>src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts</code>
+              </p>
               <p><strong>Exports:</strong> <span class="empty">None</span></p>
             </article>
             <article
@@ -1373,20 +1420,21 @@
               <h3>Architecture overview</h3>
               <p class="muted"><code>diagrams/architecture-overview.mmd</code></p>
               <div class="mermaid">
-                graph TD package__ankhorage_supabase[&quot;@ankhorage/supabase&quot;]
-                entrypoint_src_index_ts[&quot;src/index.ts&quot;] package__ankhorage_supabase --&gt;
-                entrypoint_src_index_ts
+                graph TD package__ankhorage_infra_supabase[&quot;@ankhorage/infra-supabase&quot;]
+                entrypoint_src_index_ts[&quot;src/index.ts&quot;] package__ankhorage_infra_supabase
+                --&gt; entrypoint_src_index_ts
                 module_examples_basic_usage_index_ts[&quot;examples/basic-usage/index.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_examples_basic_usage_index_ts
+                package__ankhorage_infra_supabase -.-&gt; module_examples_basic_usage_index_ts
+                module_examples_basic_usage_index_ts --&gt; module_dist_index_d_ts
                 module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_constants_infra_ts
+                package__ankhorage_infra_supabase -.-&gt; module_src_constants_infra_ts
                 module_src_features_platform_infrastructure_adapters_outbound_createFetchSupabaseControlPlane_ts[&quot;src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_adapters_outbound_createFetchSupabaseControlPlane_ts
                 module_src_features_platform_infrastructure_adapters_outbound_createFetchSupabaseControlPlane_ts
                 --&gt; module_src_types_supabase_ts
                 module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/destroySupabaseAsync.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts
                 module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts
                 --&gt;
@@ -1400,7 +1448,7 @@
                 module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts
                 --&gt; module_src_types_supabase_ts
                 module_src_features_platform_infrastructure_application_use_cases_getSupabaseStatusAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/getSupabaseStatusAsync.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_application_use_cases_getSupabaseStatusAsync_ts
                 module_src_features_platform_infrastructure_application_use_cases_getSupabaseStatusAsync_ts
                 --&gt;
@@ -1414,13 +1462,13 @@
                 module_src_features_platform_infrastructure_application_use_cases_getSupabaseStatusAsync_ts
                 --&gt; module_src_types_supabase_ts
                 module_src_features_platform_infrastructure_application_use_cases_planSupabase_ts[&quot;src/features/platform-infrastructure/application/use-cases/planSupabase.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_application_use_cases_planSupabase_ts
                 module_src_features_platform_infrastructure_application_use_cases_planSupabase_ts
                 --&gt;
                 module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
                 module_src_features_platform_infrastructure_application_use_cases_prepareSupabaseBootstrapCredentialsAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/prepareSupabaseBootstrapCredentialsAsync.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_application_use_cases_prepareSupabaseBootstrapCredentialsAsync_ts
                 module_src_features_platform_infrastructure_application_use_cases_prepareSupabaseBootstrapCredentialsAsync_ts
                 --&gt;
@@ -1433,7 +1481,7 @@
                 module_src_features_platform_infrastructure_application_use_cases_prepareSupabaseBootstrapCredentialsAsync_ts
                 --&gt; module_src_types_supabase_ts
                 module_src_features_platform_infrastructure_application_use_cases_reconcileSupabaseAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/reconcileSupabaseAsync.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_application_use_cases_reconcileSupabaseAsync_ts
                 module_src_features_platform_infrastructure_application_use_cases_reconcileSupabaseAsync_ts
                 --&gt;
@@ -1447,7 +1495,7 @@
                 module_src_features_platform_infrastructure_application_use_cases_reconcileSupabaseAsync_ts
                 --&gt; module_src_types_supabase_ts
                 module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/resolveSupabaseBootstrapCredentialsAsync.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts
                 module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts
                 --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
@@ -1457,7 +1505,7 @@
                 module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts
                 --&gt; module_src_types_supabase_ts
                 module_src_features_platform_infrastructure_application_use_cases_validateSupabaseAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/validateSupabaseAsync.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_application_use_cases_validateSupabaseAsync_ts
                 module_src_features_platform_infrastructure_application_use_cases_validateSupabaseAsync_ts
                 --&gt;
@@ -1474,10 +1522,10 @@
                 --&gt;
                 module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts
                 module_src_features_platform_infrastructure_application_use_cases_validateSupabasePersistenceCredentialsAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/validateSupabasePersistenceCredentialsAsync.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_application_use_cases_validateSupabasePersistenceCredentialsAsync_ts
                 module_src_features_platform_infrastructure_composition_createInfraAdapter_ts[&quot;src/features/platform-infrastructure/composition/createInfraAdapter.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_composition_createInfraAdapter_ts
                 module_src_features_platform_infrastructure_composition_createInfraAdapter_ts --&gt;
                 module_src_constants_infra_ts
@@ -1502,16 +1550,21 @@
                 module_src_features_platform_infrastructure_composition_createInfraAdapter_ts --&gt;
                 module_src_types_supabase_ts
                 module_src_features_platform_infrastructure_constants_databaseBootstrap_ts[&quot;src/features/platform-infrastructure/constants/databaseBootstrap.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_constants_databaseBootstrap_ts
                 module_src_features_platform_infrastructure_constants_recovery_ts[&quot;src/features/platform-infrastructure/constants/recovery.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_constants_recovery_ts
                 module_src_features_platform_infrastructure_constants_supabase_ts[&quot;src/features/platform-infrastructure/constants/supabase.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_constants_supabase_ts
+                module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts&quot;]
+                package__ankhorage_infra_supabase -.-&gt;
+                module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts
+                module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts
+                --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts
                 --&gt; module_src_features_platform_infrastructure_constants_recovery_ts
@@ -1520,7 +1573,7 @@
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts
                 --&gt; module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts
                 --&gt; module_src_features_platform_infrastructure_constants_recovery_ts
@@ -1529,32 +1582,32 @@
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts
                 --&gt; module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabasePersistence_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabasePersistence.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabasePersistence_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseRestore_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseRestore.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseRestore_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseRestore_ts
                 --&gt; module_src_features_platform_infrastructure_constants_recovery_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseRestore_ts
                 --&gt; module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseOperationalWorkloads_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseOperationalWorkloads.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseOperationalWorkloads_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseOperationalWorkloads_ts
                 --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseS3Values.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseStorageWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseStorageWorkload.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseStorageWorkload_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseStorageWorkload_ts
                 --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseStorageWorkload_ts
                 --&gt; module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt;
                 module_src_features_platform_infrastructure_constants_databaseBootstrap_ts
@@ -1562,6 +1615,8 @@
                 module_src_features_platform_infrastructure_constants_recovery_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt;
                 module_src_features_platform_infrastructure_constants_supabase_ts
+                module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt;
+                module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt;
@@ -1575,121 +1630,129 @@
                 module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseStorageWorkload_ts
                 module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts[&quot;src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
                 module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
                 --&gt; module_src_types_supabase_ts
                 module_src_features_platform_infrastructure_utils_resolveSupabaseControlPlaneUrl_ts[&quot;src/features/platform-infrastructure/utils/resolveSupabaseControlPlaneUrl.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_utils_resolveSupabaseControlPlaneUrl_ts
                 module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts[&quot;src/features/platform-infrastructure/utils/validateSupabaseBootstrapCredentials.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts
                 module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts
                 --&gt; module_src_types_supabase_ts module_src_index_ts[&quot;src/index.ts&quot;]
                 module_src_infraAdapter_test_ts[&quot;src/infraAdapter.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_infraAdapter_test_ts
+                package__ankhorage_infra_supabase -.-&gt; module_src_infraAdapter_test_ts
                 module_src_infraAdapter_test_ts --&gt; module_src_index_ts
+                module_src_supabaseAuthWorkload_test_ts[&quot;src/supabaseAuthWorkload.test.ts&quot;]
+                package__ankhorage_infra_supabase -.-&gt; module_src_supabaseAuthWorkload_test_ts
+                module_src_supabaseAuthWorkload_test_ts --&gt;
+                module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts
                 module_src_supabaseBootstrapCredentials_test_ts[&quot;src/supabaseBootstrapCredentials.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_supabaseBootstrapCredentials_test_ts
+                package__ankhorage_infra_supabase -.-&gt;
+                module_src_supabaseBootstrapCredentials_test_ts
                 module_src_supabaseBootstrapCredentials_test_ts --&gt; module_src_index_ts
                 module_src_supabaseControlPlane_test_ts[&quot;src/supabaseControlPlane.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_supabaseControlPlane_test_ts
+                package__ankhorage_infra_supabase -.-&gt; module_src_supabaseControlPlane_test_ts
                 module_src_supabaseControlPlane_test_ts --&gt; module_src_index_ts
                 module_src_supabaseLifecycle_test_ts[&quot;src/supabaseLifecycle.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_supabaseLifecycle_test_ts
+                package__ankhorage_infra_supabase -.-&gt; module_src_supabaseLifecycle_test_ts
                 module_src_supabaseLifecycle_test_ts --&gt; module_src_index_ts
                 module_src_supabaseMetaHealth_test_ts[&quot;src/supabaseMetaHealth.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_supabaseMetaHealth_test_ts
+                package__ankhorage_infra_supabase -.-&gt; module_src_supabaseMetaHealth_test_ts
                 module_src_supabaseMetaHealth_test_ts --&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseOperationalWorkloads_ts
                 module_src_supabaseNativeHealth_test_ts[&quot;src/supabaseNativeHealth.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_supabaseNativeHealth_test_ts
+                package__ankhorage_infra_supabase -.-&gt; module_src_supabaseNativeHealth_test_ts
                 module_src_supabaseNativeHealth_test_ts --&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts
                 module_src_supabaseObjectStorageOwnership_test_ts[&quot;src/supabaseObjectStorageOwnership.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_supabaseObjectStorageOwnership_test_ts
                 module_src_supabaseObjectStorageOwnership_test_ts --&gt; module_src_index_ts
                 module_src_supabasePersistence_test_ts[&quot;src/supabasePersistence.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_supabasePersistence_test_ts
+                package__ankhorage_infra_supabase -.-&gt; module_src_supabasePersistence_test_ts
                 module_src_supabasePersistence_test_ts --&gt; module_src_index_ts
                 module_src_supabasePersistenceCredentials_test_ts[&quot;src/supabasePersistenceCredentials.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt;
+                package__ankhorage_infra_supabase -.-&gt;
                 module_src_supabasePersistenceCredentials_test_ts
                 module_src_supabasePersistenceCredentials_test_ts --&gt; module_src_index_ts
                 module_src_supabaseRoleBackupFilter_test_ts[&quot;src/supabaseRoleBackupFilter.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_supabaseRoleBackupFilter_test_ts
+                package__ankhorage_infra_supabase -.-&gt;
+                module_src_supabaseRoleBackupFilter_test_ts
                 module_src_supabaseRoleBackupFilter_test_ts --&gt; module_src_index_ts
                 module_src_supabaseRuntimeEndpoints_test_ts[&quot;src/supabaseRuntimeEndpoints.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_supabaseRuntimeEndpoints_test_ts
+                package__ankhorage_infra_supabase -.-&gt;
+                module_src_supabaseRuntimeEndpoints_test_ts
                 module_src_supabaseRuntimeEndpoints_test_ts --&gt; module_src_index_ts
                 module_src_supabaseStudioHealth_test_ts[&quot;src/supabaseStudioHealth.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_supabaseStudioHealth_test_ts
+                package__ankhorage_infra_supabase -.-&gt; module_src_supabaseStudioHealth_test_ts
                 module_src_supabaseStudioHealth_test_ts --&gt; module_src_index_ts
                 module_src_supabaseVaultBootstrap_test_ts[&quot;src/supabaseVaultBootstrap.test.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_supabaseVaultBootstrap_test_ts
+                package__ankhorage_infra_supabase -.-&gt; module_src_supabaseVaultBootstrap_test_ts
                 module_src_supabaseVaultBootstrap_test_ts --&gt; module_src_index_ts
                 module_src_types_supabase_ts[&quot;src/types/supabase.ts&quot;]
-                package__ankhorage_supabase -.-&gt; module_src_types_supabase_ts
+                package__ankhorage_infra_supabase -.-&gt; module_src_types_supabase_ts
               </div>
               <details>
                 <summary>View Mermaid source</summary>
                 <pre>
 graph TD
-  package__ankhorage_supabase[&quot;@ankhorage/supabase&quot;]
+  package__ankhorage_infra_supabase[&quot;@ankhorage/infra-supabase&quot;]
   entrypoint_src_index_ts[&quot;src/index.ts&quot;]
-  package__ankhorage_supabase --&gt; entrypoint_src_index_ts
+  package__ankhorage_infra_supabase --&gt; entrypoint_src_index_ts
   module_examples_basic_usage_index_ts[&quot;examples/basic-usage/index.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_examples_basic_usage_index_ts
+  package__ankhorage_infra_supabase -.-&gt; module_examples_basic_usage_index_ts
+  module_examples_basic_usage_index_ts --&gt; module_dist_index_d_ts
   module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_constants_infra_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_constants_infra_ts
   module_src_features_platform_infrastructure_adapters_outbound_createFetchSupabaseControlPlane_ts[&quot;src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_adapters_outbound_createFetchSupabaseControlPlane_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_adapters_outbound_createFetchSupabaseControlPlane_ts
   module_src_features_platform_infrastructure_adapters_outbound_createFetchSupabaseControlPlane_ts --&gt; module_src_types_supabase_ts
   module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/destroySupabaseAsync.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
   module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_utils_resolveSupabaseControlPlaneUrl_ts
   module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts --&gt; module_src_types_supabase_ts
   module_src_features_platform_infrastructure_application_use_cases_getSupabaseStatusAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/getSupabaseStatusAsync.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_getSupabaseStatusAsync_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_getSupabaseStatusAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_getSupabaseStatusAsync_ts --&gt; module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_getSupabaseStatusAsync_ts --&gt; module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
   module_src_features_platform_infrastructure_application_use_cases_getSupabaseStatusAsync_ts --&gt; module_src_features_platform_infrastructure_utils_resolveSupabaseControlPlaneUrl_ts
   module_src_features_platform_infrastructure_application_use_cases_getSupabaseStatusAsync_ts --&gt; module_src_types_supabase_ts
   module_src_features_platform_infrastructure_application_use_cases_planSupabase_ts[&quot;src/features/platform-infrastructure/application/use-cases/planSupabase.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_planSupabase_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_planSupabase_ts
   module_src_features_platform_infrastructure_application_use_cases_planSupabase_ts --&gt; module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
   module_src_features_platform_infrastructure_application_use_cases_prepareSupabaseBootstrapCredentialsAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/prepareSupabaseBootstrapCredentialsAsync.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_prepareSupabaseBootstrapCredentialsAsync_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_prepareSupabaseBootstrapCredentialsAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_prepareSupabaseBootstrapCredentialsAsync_ts --&gt; module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_prepareSupabaseBootstrapCredentialsAsync_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
   module_src_features_platform_infrastructure_application_use_cases_prepareSupabaseBootstrapCredentialsAsync_ts --&gt; module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts
   module_src_features_platform_infrastructure_application_use_cases_prepareSupabaseBootstrapCredentialsAsync_ts --&gt; module_src_types_supabase_ts
   module_src_features_platform_infrastructure_application_use_cases_reconcileSupabaseAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/reconcileSupabaseAsync.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_reconcileSupabaseAsync_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_reconcileSupabaseAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_reconcileSupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_reconcileSupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
   module_src_features_platform_infrastructure_application_use_cases_reconcileSupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_utils_resolveSupabaseControlPlaneUrl_ts
   module_src_features_platform_infrastructure_application_use_cases_reconcileSupabaseAsync_ts --&gt; module_src_types_supabase_ts
   module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/resolveSupabaseBootstrapCredentialsAsync.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
   module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts --&gt; module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts
   module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts --&gt; module_src_types_supabase_ts
   module_src_features_platform_infrastructure_application_use_cases_validateSupabaseAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/validateSupabaseAsync.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_validateSupabaseAsync_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_validateSupabaseAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_validateSupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_validateSupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_application_use_cases_validateSupabasePersistenceCredentialsAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_validateSupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
   module_src_features_platform_infrastructure_application_use_cases_validateSupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
   module_src_features_platform_infrastructure_application_use_cases_validateSupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts
   module_src_features_platform_infrastructure_application_use_cases_validateSupabasePersistenceCredentialsAsync_ts[&quot;src/features/platform-infrastructure/application/use-cases/validateSupabasePersistenceCredentialsAsync.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_validateSupabasePersistenceCredentialsAsync_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_application_use_cases_validateSupabasePersistenceCredentialsAsync_ts
   module_src_features_platform_infrastructure_composition_createInfraAdapter_ts[&quot;src/features/platform-infrastructure/composition/createInfraAdapter.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_composition_createInfraAdapter_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_composition_createInfraAdapter_ts
   module_src_features_platform_infrastructure_composition_createInfraAdapter_ts --&gt; module_src_constants_infra_ts
   module_src_features_platform_infrastructure_composition_createInfraAdapter_ts --&gt; module_src_features_platform_infrastructure_adapters_outbound_createFetchSupabaseControlPlane_ts
   module_src_features_platform_infrastructure_composition_createInfraAdapter_ts --&gt; module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts
@@ -1702,41 +1765,45 @@ graph TD
   module_src_features_platform_infrastructure_composition_createInfraAdapter_ts --&gt; module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
   module_src_features_platform_infrastructure_composition_createInfraAdapter_ts --&gt; module_src_types_supabase_ts
   module_src_features_platform_infrastructure_constants_databaseBootstrap_ts[&quot;src/features/platform-infrastructure/constants/databaseBootstrap.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_constants_databaseBootstrap_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_constants_databaseBootstrap_ts
   module_src_features_platform_infrastructure_constants_recovery_ts[&quot;src/features/platform-infrastructure/constants/recovery.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_constants_recovery_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_constants_recovery_ts
   module_src_features_platform_infrastructure_constants_supabase_ts[&quot;src/features/platform-infrastructure/constants/supabase.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_constants_supabase_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_constants_supabase_ts
+  module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts&quot;]
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts
+  module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts --&gt; module_src_features_platform_infrastructure_constants_recovery_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts --&gt; module_src_features_platform_infrastructure_constants_recovery_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabasePersistence_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabasePersistence.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabasePersistence_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabasePersistence_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseRestore_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseRestore.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabaseRestore_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabaseRestore_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseRestore_ts --&gt; module_src_features_platform_infrastructure_constants_recovery_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseRestore_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
   module_src_features_platform_infrastructure_domain_createSupabaseOperationalWorkloads_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseOperationalWorkloads.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseOperationalWorkloads_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseOperationalWorkloads_ts
   module_src_features_platform_infrastructure_domain_createSupabaseOperationalWorkloads_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
   module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseS3Values.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
   module_src_features_platform_infrastructure_domain_createSupabaseStorageWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseStorageWorkload.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseStorageWorkload_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseStorageWorkload_ts
   module_src_features_platform_infrastructure_domain_createSupabaseStorageWorkload_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
   module_src_features_platform_infrastructure_domain_createSupabaseStorageWorkload_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_constants_databaseBootstrap_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_constants_recovery_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
+  module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabasePersistence_ts
@@ -1744,55 +1811,58 @@ graph TD
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseOperationalWorkloads_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseStorageWorkload_ts
   module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts[&quot;src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
   module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts --&gt; module_src_types_supabase_ts
   module_src_features_platform_infrastructure_utils_resolveSupabaseControlPlaneUrl_ts[&quot;src/features/platform-infrastructure/utils/resolveSupabaseControlPlaneUrl.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_utils_resolveSupabaseControlPlaneUrl_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_utils_resolveSupabaseControlPlaneUrl_ts
   module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts[&quot;src/features/platform-infrastructure/utils/validateSupabaseBootstrapCredentials.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts
   module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts --&gt; module_src_types_supabase_ts
   module_src_index_ts[&quot;src/index.ts&quot;]
   module_src_infraAdapter_test_ts[&quot;src/infraAdapter.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_infraAdapter_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_infraAdapter_test_ts
   module_src_infraAdapter_test_ts --&gt; module_src_index_ts
+  module_src_supabaseAuthWorkload_test_ts[&quot;src/supabaseAuthWorkload.test.ts&quot;]
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabaseAuthWorkload_test_ts
+  module_src_supabaseAuthWorkload_test_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts
   module_src_supabaseBootstrapCredentials_test_ts[&quot;src/supabaseBootstrapCredentials.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabaseBootstrapCredentials_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabaseBootstrapCredentials_test_ts
   module_src_supabaseBootstrapCredentials_test_ts --&gt; module_src_index_ts
   module_src_supabaseControlPlane_test_ts[&quot;src/supabaseControlPlane.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabaseControlPlane_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabaseControlPlane_test_ts
   module_src_supabaseControlPlane_test_ts --&gt; module_src_index_ts
   module_src_supabaseLifecycle_test_ts[&quot;src/supabaseLifecycle.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabaseLifecycle_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabaseLifecycle_test_ts
   module_src_supabaseLifecycle_test_ts --&gt; module_src_index_ts
   module_src_supabaseMetaHealth_test_ts[&quot;src/supabaseMetaHealth.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabaseMetaHealth_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabaseMetaHealth_test_ts
   module_src_supabaseMetaHealth_test_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseOperationalWorkloads_ts
   module_src_supabaseNativeHealth_test_ts[&quot;src/supabaseNativeHealth.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabaseNativeHealth_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabaseNativeHealth_test_ts
   module_src_supabaseNativeHealth_test_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts
   module_src_supabaseObjectStorageOwnership_test_ts[&quot;src/supabaseObjectStorageOwnership.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabaseObjectStorageOwnership_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabaseObjectStorageOwnership_test_ts
   module_src_supabaseObjectStorageOwnership_test_ts --&gt; module_src_index_ts
   module_src_supabasePersistence_test_ts[&quot;src/supabasePersistence.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabasePersistence_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabasePersistence_test_ts
   module_src_supabasePersistence_test_ts --&gt; module_src_index_ts
   module_src_supabasePersistenceCredentials_test_ts[&quot;src/supabasePersistenceCredentials.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabasePersistenceCredentials_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabasePersistenceCredentials_test_ts
   module_src_supabasePersistenceCredentials_test_ts --&gt; module_src_index_ts
   module_src_supabaseRoleBackupFilter_test_ts[&quot;src/supabaseRoleBackupFilter.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabaseRoleBackupFilter_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabaseRoleBackupFilter_test_ts
   module_src_supabaseRoleBackupFilter_test_ts --&gt; module_src_index_ts
   module_src_supabaseRuntimeEndpoints_test_ts[&quot;src/supabaseRuntimeEndpoints.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabaseRuntimeEndpoints_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabaseRuntimeEndpoints_test_ts
   module_src_supabaseRuntimeEndpoints_test_ts --&gt; module_src_index_ts
   module_src_supabaseStudioHealth_test_ts[&quot;src/supabaseStudioHealth.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabaseStudioHealth_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabaseStudioHealth_test_ts
   module_src_supabaseStudioHealth_test_ts --&gt; module_src_index_ts
   module_src_supabaseVaultBootstrap_test_ts[&quot;src/supabaseVaultBootstrap.test.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_supabaseVaultBootstrap_test_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_supabaseVaultBootstrap_test_ts
   module_src_supabaseVaultBootstrap_test_ts --&gt; module_src_index_ts
   module_src_types_supabase_ts[&quot;src/types/supabase.ts&quot;]
-  package__ankhorage_supabase -.-&gt; module_src_types_supabase_ts
+  package__ankhorage_infra_supabase -.-&gt; module_src_types_supabase_ts
 </pre>
               </details>
             </article>
@@ -1819,6 +1889,7 @@ graph TD
                 module_src_features_platform_infrastructure_constants_databaseBootstrap_ts[&quot;src/features/platform-infrastructure/constants/databaseBootstrap.ts&quot;]
                 module_src_features_platform_infrastructure_constants_recovery_ts[&quot;src/features/platform-infrastructure/constants/recovery.ts&quot;]
                 module_src_features_platform_infrastructure_constants_supabase_ts[&quot;src/features/platform-infrastructure/constants/supabase.ts&quot;]
+                module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts&quot;]
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts&quot;]
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts&quot;]
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabasePersistence_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabasePersistence.ts&quot;]
@@ -1832,6 +1903,7 @@ graph TD
                 module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts[&quot;src/features/platform-infrastructure/utils/validateSupabaseBootstrapCredentials.ts&quot;]
                 module_src_index_ts[&quot;src/index.ts&quot;]
                 module_src_infraAdapter_test_ts[&quot;src/infraAdapter.test.ts&quot;]
+                module_src_supabaseAuthWorkload_test_ts[&quot;src/supabaseAuthWorkload.test.ts&quot;]
                 module_src_supabaseBootstrapCredentials_test_ts[&quot;src/supabaseBootstrapCredentials.test.ts&quot;]
                 module_src_supabaseControlPlane_test_ts[&quot;src/supabaseControlPlane.test.ts&quot;]
                 module_src_supabaseLifecycle_test_ts[&quot;src/supabaseLifecycle.test.ts&quot;]
@@ -1845,6 +1917,7 @@ graph TD
                 module_src_supabaseStudioHealth_test_ts[&quot;src/supabaseStudioHealth.test.ts&quot;]
                 module_src_supabaseVaultBootstrap_test_ts[&quot;src/supabaseVaultBootstrap.test.ts&quot;]
                 module_src_types_supabase_ts[&quot;src/types/supabase.ts&quot;]
+                module_examples_basic_usage_index_ts --&gt; module_dist_index_d_ts
                 module_src_features_platform_infrastructure_adapters_outbound_createFetchSupabaseControlPlane_ts
                 --&gt; module_src_types_supabase_ts
                 module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts
@@ -1936,6 +2009,8 @@ graph TD
                 module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
                 module_src_features_platform_infrastructure_composition_createInfraAdapter_ts --&gt;
                 module_src_types_supabase_ts
+                module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts
+                --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts
                 --&gt; module_src_features_platform_infrastructure_constants_recovery_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts
@@ -1965,6 +2040,8 @@ graph TD
                 module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt;
                 module_src_features_platform_infrastructure_constants_supabase_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt;
+                module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts
+                module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts
                 module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts
@@ -1980,9 +2057,11 @@ graph TD
                 --&gt; module_src_types_supabase_ts
                 module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts
                 --&gt; module_src_types_supabase_ts module_src_infraAdapter_test_ts --&gt;
-                module_src_index_ts module_src_supabaseBootstrapCredentials_test_ts --&gt;
-                module_src_index_ts module_src_supabaseControlPlane_test_ts --&gt;
-                module_src_index_ts module_src_supabaseLifecycle_test_ts --&gt; module_src_index_ts
+                module_src_index_ts module_src_supabaseAuthWorkload_test_ts --&gt;
+                module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts
+                module_src_supabaseBootstrapCredentials_test_ts --&gt; module_src_index_ts
+                module_src_supabaseControlPlane_test_ts --&gt; module_src_index_ts
+                module_src_supabaseLifecycle_test_ts --&gt; module_src_index_ts
                 module_src_supabaseMetaHealth_test_ts --&gt;
                 module_src_features_platform_infrastructure_domain_createSupabaseOperationalWorkloads_ts
                 module_src_supabaseNativeHealth_test_ts --&gt;
@@ -2014,6 +2093,7 @@ graph LR
   module_src_features_platform_infrastructure_constants_databaseBootstrap_ts[&quot;src/features/platform-infrastructure/constants/databaseBootstrap.ts&quot;]
   module_src_features_platform_infrastructure_constants_recovery_ts[&quot;src/features/platform-infrastructure/constants/recovery.ts&quot;]
   module_src_features_platform_infrastructure_constants_supabase_ts[&quot;src/features/platform-infrastructure/constants/supabase.ts&quot;]
+  module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts&quot;]
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts&quot;]
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts&quot;]
   module_src_features_platform_infrastructure_domain_createSupabaseDatabasePersistence_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabasePersistence.ts&quot;]
@@ -2027,6 +2107,7 @@ graph LR
   module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts[&quot;src/features/platform-infrastructure/utils/validateSupabaseBootstrapCredentials.ts&quot;]
   module_src_index_ts[&quot;src/index.ts&quot;]
   module_src_infraAdapter_test_ts[&quot;src/infraAdapter.test.ts&quot;]
+  module_src_supabaseAuthWorkload_test_ts[&quot;src/supabaseAuthWorkload.test.ts&quot;]
   module_src_supabaseBootstrapCredentials_test_ts[&quot;src/supabaseBootstrapCredentials.test.ts&quot;]
   module_src_supabaseControlPlane_test_ts[&quot;src/supabaseControlPlane.test.ts&quot;]
   module_src_supabaseLifecycle_test_ts[&quot;src/supabaseLifecycle.test.ts&quot;]
@@ -2040,6 +2121,7 @@ graph LR
   module_src_supabaseStudioHealth_test_ts[&quot;src/supabaseStudioHealth.test.ts&quot;]
   module_src_supabaseVaultBootstrap_test_ts[&quot;src/supabaseVaultBootstrap.test.ts&quot;]
   module_src_types_supabase_ts[&quot;src/types/supabase.ts&quot;]
+  module_examples_basic_usage_index_ts --&gt; module_dist_index_d_ts
   module_src_features_platform_infrastructure_adapters_outbound_createFetchSupabaseControlPlane_ts --&gt; module_src_types_supabase_ts
   module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_application_use_cases_resolveSupabaseBootstrapCredentialsAsync_ts
   module_src_features_platform_infrastructure_application_use_cases_destroySupabaseAsync_ts --&gt; module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
@@ -2077,6 +2159,7 @@ graph LR
   module_src_features_platform_infrastructure_composition_createInfraAdapter_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts
   module_src_features_platform_infrastructure_composition_createInfraAdapter_ts --&gt; module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts
   module_src_features_platform_infrastructure_composition_createInfraAdapter_ts --&gt; module_src_types_supabase_ts
+  module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts --&gt; module_src_features_platform_infrastructure_constants_recovery_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseS3Values_ts
@@ -2091,6 +2174,7 @@ graph LR
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_constants_databaseBootstrap_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_constants_recovery_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_constants_supabase_ts
+  module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts
   module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseDatabasePersistence_ts
@@ -2100,6 +2184,7 @@ graph LR
   module_src_features_platform_infrastructure_domain_resolveSupabaseDesiredState_ts --&gt; module_src_types_supabase_ts
   module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts --&gt; module_src_types_supabase_ts
   module_src_infraAdapter_test_ts --&gt; module_src_index_ts
+  module_src_supabaseAuthWorkload_test_ts --&gt; module_src_features_platform_infrastructure_domain_createSupabaseWorkloads_ts
   module_src_supabaseBootstrapCredentials_test_ts --&gt; module_src_index_ts
   module_src_supabaseControlPlane_test_ts --&gt; module_src_index_ts
   module_src_supabaseLifecycle_test_ts --&gt; module_src_index_ts
@@ -2135,6 +2220,7 @@ graph LR
                 module_src_features_platform_infrastructure_constants_databaseBootstrap_ts[&quot;src/features/platform-infrastructure/constants/databaseBootstrap.ts&quot;]
                 module_src_features_platform_infrastructure_constants_recovery_ts[&quot;src/features/platform-infrastructure/constants/recovery.ts&quot;]
                 module_src_features_platform_infrastructure_constants_supabase_ts[&quot;src/features/platform-infrastructure/constants/supabase.ts&quot;]
+                module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts&quot;]
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts&quot;]
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts&quot;]
                 module_src_features_platform_infrastructure_domain_createSupabaseDatabasePersistence_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabasePersistence.ts&quot;]
@@ -2148,6 +2234,7 @@ graph LR
                 module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts[&quot;src/features/platform-infrastructure/utils/validateSupabaseBootstrapCredentials.ts&quot;]
                 module_src_index_ts[&quot;src/index.ts&quot;]
                 module_src_infraAdapter_test_ts[&quot;src/infraAdapter.test.ts&quot;]
+                module_src_supabaseAuthWorkload_test_ts[&quot;src/supabaseAuthWorkload.test.ts&quot;]
                 module_src_supabaseBootstrapCredentials_test_ts[&quot;src/supabaseBootstrapCredentials.test.ts&quot;]
                 module_src_supabaseControlPlane_test_ts[&quot;src/supabaseControlPlane.test.ts&quot;]
                 module_src_supabaseLifecycle_test_ts[&quot;src/supabaseLifecycle.test.ts&quot;]
@@ -2199,6 +2286,7 @@ graph LR
   module_src_features_platform_infrastructure_constants_databaseBootstrap_ts[&quot;src/features/platform-infrastructure/constants/databaseBootstrap.ts&quot;]
   module_src_features_platform_infrastructure_constants_recovery_ts[&quot;src/features/platform-infrastructure/constants/recovery.ts&quot;]
   module_src_features_platform_infrastructure_constants_supabase_ts[&quot;src/features/platform-infrastructure/constants/supabase.ts&quot;]
+  module_src_features_platform_infrastructure_domain_createSupabaseAuthWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts&quot;]
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseBackupWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts&quot;]
   module_src_features_platform_infrastructure_domain_createSupabaseDatabaseDataRestoreWorkload_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts&quot;]
   module_src_features_platform_infrastructure_domain_createSupabaseDatabasePersistence_ts[&quot;src/features/platform-infrastructure/domain/createSupabaseDatabasePersistence.ts&quot;]
@@ -2212,6 +2300,7 @@ graph LR
   module_src_features_platform_infrastructure_utils_validateSupabaseBootstrapCredentials_ts[&quot;src/features/platform-infrastructure/utils/validateSupabaseBootstrapCredentials.ts&quot;]
   module_src_index_ts[&quot;src/index.ts&quot;]
   module_src_infraAdapter_test_ts[&quot;src/infraAdapter.test.ts&quot;]
+  module_src_supabaseAuthWorkload_test_ts[&quot;src/supabaseAuthWorkload.test.ts&quot;]
   module_src_supabaseBootstrapCredentials_test_ts[&quot;src/supabaseBootstrapCredentials.test.ts&quot;]
   module_src_supabaseControlPlane_test_ts[&quot;src/supabaseControlPlane.test.ts&quot;]
   module_src_supabaseLifecycle_test_ts[&quot;src/supabaseLifecycle.test.ts&quot;]
@@ -2782,6 +2871,69 @@ sequenceDiagram
           </section>
         </section>
         <section
+          id="view-src-features-platform-infrastructure-domain-createsupabaseauthworkload-ts"
+          class="view"
+          data-view="src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts"
+          hidden
+        >
+          <section class="panel">
+            <h2>src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts</h2>
+            <article
+              class="item"
+              data-search="createSupabaseAuthWorkload src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts Create the GoTrue authentication workload from the external Auth URL and authored sign-up policy."
+            >
+              <h3>createSupabaseAuthWorkload</h3>
+              <p class="muted">
+                <code
+                  >src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts:11:1</code
+                >
+              </p>
+              <p>
+                Create the GoTrue authentication workload from the external Auth URL and authored
+                sign-up policy.
+              </p>
+            </article>
+            <article
+              class="item"
+              data-search="literal src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts Create one literal authentication workload value."
+            >
+              <h3>literal</h3>
+              <p class="muted">
+                <code
+                  >src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts:49:1</code
+                >
+              </p>
+              <p>Create one literal authentication workload value.</p>
+            </article>
+            <article
+              class="item"
+              data-search="credential src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts Create one execution-only Supabase bootstrap credential reference."
+            >
+              <h3>credential</h3>
+              <p class="muted">
+                <code
+                  >src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts:54:1</code
+                >
+              </p>
+              <p>Create one execution-only Supabase bootstrap credential reference.</p>
+            </article>
+            <article
+              class="item"
+              data-search="databaseUrl src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts Create one password-bearing Postgres URL materialized only by the selected runtime."
+            >
+              <h3>databaseUrl</h3>
+              <p class="muted">
+                <code
+                  >src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts:59:1</code
+                >
+              </p>
+              <p>
+                Create one password-bearing Postgres URL materialized only by the selected runtime.
+              </p>
+            </article>
+          </section>
+        </section>
+        <section
           id="view-src-features-platform-infrastructure-domain-createsupabasedatabasebackupworkload-ts"
           class="view"
           data-view="src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts"
@@ -2864,7 +3016,7 @@ sequenceDiagram
               <h3>literal</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts:117:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts:120:1</code
                 >
               </p>
               <p>Create one literal workload value.</p>
@@ -2876,7 +3028,7 @@ sequenceDiagram
               <h3>bootstrapCredential</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts:122:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts:125:1</code
                 >
               </p>
               <p>Create one execution-only Supabase bootstrap credential reference.</p>
@@ -3177,7 +3329,7 @@ sequenceDiagram
               <h3>createSupabaseWorkloads</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:30:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:31:1</code
                 >
               </p>
               <p>
@@ -3192,7 +3344,7 @@ sequenceDiagram
               <h3>createDatabaseWorkload</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:61:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:62:1</code
                 >
               </p>
               <p>
@@ -3207,7 +3359,7 @@ sequenceDiagram
               <h3>createDatabaseBootstrapFiles</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:91:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:92:1</code
                 >
               </p>
               <p>Compose database bootstrap SQL, including selected provider-owned migrations.</p>
@@ -3219,7 +3371,7 @@ sequenceDiagram
               <h3>createDatabaseHealth</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:125:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:117:1</code
                 >
               </p>
               <p>
@@ -3229,26 +3381,12 @@ sequenceDiagram
             </article>
             <article
               class="item"
-              data-search="createAuthWorkload src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts Create the GoTrue authentication workload using the current external Auth URL shape."
-            >
-              <h3>createAuthWorkload</h3>
-              <p class="muted">
-                <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:136:1</code
-                >
-              </p>
-              <p>
-                Create the GoTrue authentication workload using the current external Auth URL shape.
-              </p>
-            </article>
-            <article
-              class="item"
               data-search="createRestWorkload src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts Create the PostgREST Data API workload."
             >
               <h3>createRestWorkload</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:169:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:128:1</code
                 >
               </p>
               <p>Create the PostgREST Data API workload.</p>
@@ -3260,7 +3398,7 @@ sequenceDiagram
               <h3>createRealtimeWorkload</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:196:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:155:1</code
                 >
               </p>
               <p>Create the Realtime workload without runtime-specific networking assumptions.</p>
@@ -3272,7 +3410,7 @@ sequenceDiagram
               <h3>createGatewayWorkload</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:240:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:199:1</code
                 >
               </p>
               <p>Create the current Envoy gateway with portable service-DNS routes.</p>
@@ -3284,7 +3422,7 @@ sequenceDiagram
               <h3>isSupabaseProductionTier</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:287:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:242:1</code
                 >
               </p>
               <p>
@@ -3299,7 +3437,7 @@ sequenceDiagram
               <h3>resolveLocalPublishedPort</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:294:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:249:1</code
                 >
               </p>
               <p>Resolve an exact plain-HTTP listener only for the local runtime boundary.</p>
@@ -3311,7 +3449,7 @@ sequenceDiagram
               <h3>literal</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:309:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:264:1</code
                 >
               </p>
               <p>Create one literal workload value.</p>
@@ -3323,7 +3461,7 @@ sequenceDiagram
               <h3>credential</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:314:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:269:1</code
                 >
               </p>
               <p>Create one execution-only control-plane credential field reference.</p>
@@ -3335,7 +3473,7 @@ sequenceDiagram
               <h3>databaseUrl</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:319:1</code
+                  >src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts:274:1</code
                 >
               </p>
               <p>
@@ -3373,7 +3511,7 @@ sequenceDiagram
               <h3>isSelected</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:38:1</code
+                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:35:1</code
                 >
               </p>
               <p>Check whether at least one Supabase-owned sibling capability is selected.</p>
@@ -3385,7 +3523,7 @@ sequenceDiagram
               <h3>createPlatformOwner</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:47:1</code
+                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:44:1</code
                 >
               </p>
               <p>Create the logical owner for one deduplicated platform instance.</p>
@@ -3397,7 +3535,7 @@ sequenceDiagram
               <h3>createBucketOwner</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:70:1</code
+                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:67:1</code
                 >
               </p>
               <p>Create persistent ownership for one Storage bucket.</p>
@@ -3409,7 +3547,7 @@ sequenceDiagram
               <h3>isBucketName</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:90:1</code
+                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:87:1</code
                 >
               </p>
               <p>Validate one portable Supabase Storage bucket name.</p>
@@ -3421,7 +3559,7 @@ sequenceDiagram
               <h3>invalidSelection</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:95:1</code
+                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:92:1</code
                 >
               </p>
               <p>Reject invocation when no Supabase-owned capability is selected.</p>
@@ -3433,7 +3571,7 @@ sequenceDiagram
               <h3>missingPublicBaseUrl</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:103:1</code
+                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:100:1</code
                 >
               </p>
               <p>Require one explicit external origin for Auth and public platform outputs.</p>
@@ -3445,7 +3583,7 @@ sequenceDiagram
               <h3>invalidBucketName</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:111:1</code
+                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:108:1</code
                 >
               </p>
               <p>Reject one invalid desired Storage bucket name.</p>
@@ -3457,7 +3595,7 @@ sequenceDiagram
               <h3>failure</h3>
               <p class="muted">
                 <code
-                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:116:1</code
+                  >src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts:113:1</code
                 >
               </p>
               <p>Create one sanitized desired-state failure.</p>
@@ -3618,6 +3756,34 @@ sequenceDiagram
           </section>
         </section>
         <section
+          id="view-src-supabaseauthworkload-test-ts"
+          class="view"
+          data-view="src/supabaseAuthWorkload.test.ts"
+          hidden
+        >
+          <section class="panel">
+            <h2>src/supabaseAuthWorkload.test.ts</h2>
+            <article
+              class="item"
+              data-search="createContext src/supabaseAuthWorkload.test.ts Create one workload-generation context with an explicit or omitted sign-up policy."
+            >
+              <h3>createContext</h3>
+              <p class="muted"><code>src/supabaseAuthWorkload.test.ts:25:1</code></p>
+              <p>
+                Create one workload-generation context with an explicit or omitted sign-up policy.
+              </p>
+            </article>
+            <article
+              class="item"
+              data-search="success src/supabaseAuthWorkload.test.ts Create one successful Infra result for workload-generation fixture ports."
+            >
+              <h3>success</h3>
+              <p class="muted"><code>src/supabaseAuthWorkload.test.ts:54:1</code></p>
+              <p>Create one successful Infra result for workload-generation fixture ports.</p>
+            </article>
+          </section>
+        </section>
+        <section
           id="view-src-supabasebootstrapcredentials-test-ts"
           class="view"
           data-view="src/supabaseBootstrapCredentials.test.ts"
@@ -3688,12 +3854,12 @@ sequenceDiagram
             <h2>src/supabaseLifecycle.test.ts</h2>
             <article class="item" data-search="createContext src/supabaseLifecycle.test.ts ">
               <h3>createContext</h3>
-              <p class="muted"><code>src/supabaseLifecycle.test.ts:216:1</code></p>
+              <p class="muted"><code>src/supabaseLifecycle.test.ts:221:1</code></p>
               <p class="empty">No description available.</p>
             </article>
             <article class="item" data-search="createOwnedContext src/supabaseLifecycle.test.ts ">
               <h3>createOwnedContext</h3>
-              <p class="muted"><code>src/supabaseLifecycle.test.ts:239:1</code></p>
+              <p class="muted"><code>src/supabaseLifecycle.test.ts:244:1</code></p>
               <p class="empty">No description available.</p>
             </article>
             <article
@@ -3701,22 +3867,22 @@ sequenceDiagram
               data-search="createRuntimeEndpoint src/supabaseLifecycle.test.ts Create the selected runtime&#39;s canonical public Supabase gateway output."
             >
               <h3>createRuntimeEndpoint</h3>
-              <p class="muted"><code>src/supabaseLifecycle.test.ts:261:1</code></p>
+              <p class="muted"><code>src/supabaseLifecycle.test.ts:266:1</code></p>
               <p>Create the selected runtime&#39;s canonical public Supabase gateway output.</p>
             </article>
             <article class="item" data-search="createDestroyRequest src/supabaseLifecycle.test.ts ">
               <h3>createDestroyRequest</h3>
-              <p class="muted"><code>src/supabaseLifecycle.test.ts:278:1</code></p>
+              <p class="muted"><code>src/supabaseLifecycle.test.ts:283:1</code></p>
               <p class="empty">No description available.</p>
             </article>
             <article class="item" data-search="successCredentials src/supabaseLifecycle.test.ts ">
               <h3>successCredentials</h3>
-              <p class="muted"><code>src/supabaseLifecycle.test.ts:290:1</code></p>
+              <p class="muted"><code>src/supabaseLifecycle.test.ts:295:1</code></p>
               <p class="empty">No description available.</p>
             </article>
             <article class="item" data-search="success src/supabaseLifecycle.test.ts ">
               <h3>success</h3>
-              <p class="muted"><code>src/supabaseLifecycle.test.ts:302:1</code></p>
+              <p class="muted"><code>src/supabaseLifecycle.test.ts:307:1</code></p>
               <p class="empty">No description available.</p>
             </article>
           </section>
@@ -3813,7 +3979,7 @@ sequenceDiagram
               data-search="assertBackupProjection src/supabasePersistence.test.ts "
             >
               <h3>assertBackupProjection</h3>
-              <p class="muted"><code>src/supabasePersistence.test.ts:150:1</code></p>
+              <p class="muted"><code>src/supabasePersistence.test.ts:160:1</code></p>
               <p class="empty">No description available.</p>
             </article>
             <article
@@ -3821,7 +3987,7 @@ sequenceDiagram
               data-search="assertRestoreProjection src/supabasePersistence.test.ts "
             >
               <h3>assertRestoreProjection</h3>
-              <p class="muted"><code>src/supabasePersistence.test.ts:180:1</code></p>
+              <p class="muted"><code>src/supabasePersistence.test.ts:190:1</code></p>
               <p class="empty">No description available.</p>
             </article>
             <article
@@ -3829,12 +3995,12 @@ sequenceDiagram
               data-search="assertDataRestoreProjection src/supabasePersistence.test.ts "
             >
               <h3>assertDataRestoreProjection</h3>
-              <p class="muted"><code>src/supabasePersistence.test.ts:193:1</code></p>
+              <p class="muted"><code>src/supabasePersistence.test.ts:203:1</code></p>
               <p class="empty">No description available.</p>
             </article>
             <article class="item" data-search="requireWorkload src/supabasePersistence.test.ts ">
               <h3>requireWorkload</h3>
-              <p class="muted"><code>src/supabasePersistence.test.ts:209:1</code></p>
+              <p class="muted"><code>src/supabasePersistence.test.ts:219:1</code></p>
               <p class="empty">No description available.</p>
             </article>
             <article
@@ -3842,12 +4008,12 @@ sequenceDiagram
               data-search="requireLiteralFileContent src/supabasePersistence.test.ts "
             >
               <h3>requireLiteralFileContent</h3>
-              <p class="muted"><code>src/supabasePersistence.test.ts:215:1</code></p>
+              <p class="muted"><code>src/supabasePersistence.test.ts:225:1</code></p>
               <p class="empty">No description available.</p>
             </article>
             <article class="item" data-search="createContext src/supabasePersistence.test.ts ">
               <h3>createContext</h3>
-              <p class="muted"><code>src/supabasePersistence.test.ts:222:1</code></p>
+              <p class="muted"><code>src/supabasePersistence.test.ts:235:1</code></p>
               <p class="empty">No description available.</p>
             </article>
           </section>
