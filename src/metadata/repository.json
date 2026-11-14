@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "kind": "adapter",
+  "title": "Ankhorage Supabase Infrastructure",
+  "summary": "Provides a runtime-neutral Supabase platform service adapter with portable workloads and post-runtime API reconciliation.",
+  "purpose": "Compose Supabase infrastructure independently of the selected runtime while keeping bootstrap secrets at the execution boundary.",
+  "domain": "Supabase platform infrastructure",
+  "responsibilities": [
+    "Contribute portable Supabase service workloads to infrastructure desired state.",
+    "Reconcile Supabase-owned API resources after the selected runtime is ready.",
+    "Use the configured vault boundary for bootstrap secret material without returning resolved values."
+  ],
+  "boundaries": [
+    "Does not define provider-neutral infrastructure contracts.",
+    "Does not own the concrete Kubernetes or Docker Compose runtime materialization.",
+    "Does not expose resolved bootstrap secrets in portable desired state or results."
+  ],
+  "audience": [
+    "Infrastructure hosts composing Supabase as a platform service.",
+    "Operators deploying Supabase workloads through a selected provider-neutral runtime."
+  ],
+  "useCases": [
+    "Add Supabase workloads to portable infrastructure intent.",
+    "Reconcile Supabase-owned API resources after runtime deployment.",
+    "Resolve bootstrap material through the vault boundary during execution."
+  ],
+  "architecture": {
+    "role": "A runtime-neutral infrastructure service adapter layered above a selected runtime.",
+    "invariants": [
+      "Runtime-specific workload materialization remains outside the provider.",
+      "Supabase API reconciliation occurs only after runtime readiness.",
+      "Resolved bootstrap secrets never cross the execution boundary."
+    ]
+  },
+  "implements": [
+    {
+      "packageName": "@ankhorage/contracts",
+      "subpath": "./infra",
+      "interfaceId": "InfraServiceAdapter"
+    }
+  ],
+  "constraints": {
+    "configuration": ["A selected runtime and compatible secret-vault configuration are required."],
+    "security": ["Resolved bootstrap secrets remain inside the execution boundary."],
+    "limitations": ["The package does not select or provision its underlying runtime."]
+  }
+}
