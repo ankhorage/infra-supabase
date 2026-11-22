@@ -45,9 +45,9 @@ Source: `src/types/supabase.ts:20:1`
 
 ### Members
 
-| Name         | Kind     | Type                                | Required | Description |
-| ------------ | -------- | ----------------------------------- | -------- | ----------- |
-| controlPlane | property | `SupabaseControlPlane \| undefined` | no       |             |
+| Name | Kind | Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| controlPlane | property | `SupabaseControlPlane \| undefined` | no |  |
 
 ## SupabaseControlPlane
 
@@ -57,12 +57,12 @@ Source: `src/types/supabase.ts:9:1`
 
 ### Members
 
-| Name              | Kind   | Type                                                                                                  | Required | Description |
-| ----------------- | ------ | ----------------------------------------------------------------------------------------------------- | -------- | ----------- |
-| createBucketAsync | method | `(request: SupabaseControlPlaneRequest & { readonly bucket: string; }) => Promise<InfraResult<null>>` | yes      |             |
-| deleteBucketAsync | method | `(request: SupabaseControlPlaneRequest & { readonly bucket: string; }) => Promise<InfraResult<null>>` | yes      |             |
-| healthAsync       | method | `(request: SupabaseControlPlaneRequest) => Promise<InfraResult<null>>`                                | yes      |             |
-| listBucketsAsync  | method | `(request: SupabaseControlPlaneRequest) => Promise<InfraResult<readonly string[]>>`                   | yes      |             |
+| Name | Kind | Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| createBucketAsync | method | `(request: SupabaseControlPlaneRequest & { readonly bucket: string; }) => Promise<InfraResult<null>>` | yes |  |
+| deleteBucketAsync | method | `(request: SupabaseControlPlaneRequest & { readonly bucket: string; }) => Promise<InfraResult<null>>` | yes |  |
+| healthAsync | method | `(request: SupabaseControlPlaneRequest) => Promise<InfraResult<null>>` | yes |  |
+| listBucketsAsync | method | `(request: SupabaseControlPlaneRequest) => Promise<InfraResult<readonly string[]>>` | yes |  |
 
 ## SupabaseControlPlaneRequest
 
@@ -72,8 +72,8 @@ Source: `src/types/supabase.ts:3:1`
 
 ### Members
 
-| Name           | Kind     | Type                       | Required | Description |
-| -------------- | -------- | -------------------------- | -------- | ----------- |
-| baseUrl        | property | `string`                   | yes      |             |
-| serviceRoleKey | property | `string`                   | yes      |             |
-| signal         | property | `AbortSignal \| undefined` | no       |             |
+| Name | Kind | Type | Required | Description |
+| --- | --- | --- | --- | --- |
+| baseUrl | property | `string` | yes |  |
+| serviceRoleKey | property | `string` | yes |  |
+| signal | property | `AbortSignal \| undefined` | no |  |

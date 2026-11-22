@@ -14,7 +14,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v0.6.0",
+      "value": "v0.6.1",
       "color": "cb3837"
     },
     {
@@ -50,8 +50,8 @@
     {
       "id": "tests",
       "label": "tests",
-      "value": "checked",
-      "color": "0a7f3f"
+      "value": "configured",
+      "color": "6f42c1"
     },
     {
       "id": "docs",
@@ -66,25 +66,35 @@
   "readmeCli": null,
   "readmeConfig": null,
   "config": null,
-  "entrypoints": ["src/index.ts"],
+  "entrypoints": [
+    "src/index.ts"
+  ],
   "modules": [
     {
       "path": "examples/basic-usage/index.ts",
       "isEntrypoint": false,
-      "dependencies": ["dist/index.d.ts"],
+      "dependencies": [
+        "dist/index.d.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/constants/infra.ts",
       "isEntrypoint": false,
       "dependencies": [],
-      "exports": ["infraAdapterDescriptor"]
+      "exports": [
+        "infraAdapterDescriptor"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/adapters/outbound/createFetchSupabaseControlPlane.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/types/supabase.ts"],
-      "exports": ["createFetchSupabaseControlPlane"]
+      "dependencies": [
+        "src/types/supabase.ts"
+      ],
+      "exports": [
+        "createFetchSupabaseControlPlane"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/application/use-cases/destroySupabaseAsync.ts",
@@ -95,7 +105,9 @@
         "src/features/platform-infrastructure/utils/resolveSupabaseControlPlaneUrl.ts",
         "src/types/supabase.ts"
       ],
-      "exports": ["destroySupabaseAsync"]
+      "exports": [
+        "destroySupabaseAsync"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/application/use-cases/getSupabaseStatusAsync.ts",
@@ -106,7 +118,9 @@
         "src/features/platform-infrastructure/utils/resolveSupabaseControlPlaneUrl.ts",
         "src/types/supabase.ts"
       ],
-      "exports": ["getSupabaseStatusAsync"]
+      "exports": [
+        "getSupabaseStatusAsync"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/application/use-cases/planSupabase.ts",
@@ -114,7 +128,9 @@
       "dependencies": [
         "src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts"
       ],
-      "exports": ["planSupabase"]
+      "exports": [
+        "planSupabase"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/application/use-cases/prepareSupabaseBootstrapCredentialsAsync.ts",
@@ -125,7 +141,9 @@
         "src/features/platform-infrastructure/utils/validateSupabaseBootstrapCredentials.ts",
         "src/types/supabase.ts"
       ],
-      "exports": ["prepareSupabaseBootstrapCredentialsAsync"]
+      "exports": [
+        "prepareSupabaseBootstrapCredentialsAsync"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/application/use-cases/reconcileSupabaseAsync.ts",
@@ -136,7 +154,9 @@
         "src/features/platform-infrastructure/utils/resolveSupabaseControlPlaneUrl.ts",
         "src/types/supabase.ts"
       ],
-      "exports": ["reconcileSupabaseAsync"]
+      "exports": [
+        "reconcileSupabaseAsync"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/application/use-cases/resolveSupabaseBootstrapCredentialsAsync.ts",
@@ -146,7 +166,9 @@
         "src/features/platform-infrastructure/utils/validateSupabaseBootstrapCredentials.ts",
         "src/types/supabase.ts"
       ],
-      "exports": ["resolveSupabaseBootstrapCredentialsAsync"]
+      "exports": [
+        "resolveSupabaseBootstrapCredentialsAsync"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/application/use-cases/validateSupabaseAsync.ts",
@@ -158,13 +180,17 @@
         "src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts",
         "src/features/platform-infrastructure/utils/validateSupabaseBootstrapCredentials.ts"
       ],
-      "exports": ["validateSupabaseAsync"]
+      "exports": [
+        "validateSupabaseAsync"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/application/use-cases/validateSupabasePersistenceCredentialsAsync.ts",
       "isEntrypoint": false,
       "dependencies": [],
-      "exports": ["validateSupabasePersistenceCredentialsAsync"]
+      "exports": [
+        "validateSupabasePersistenceCredentialsAsync"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/composition/createInfraAdapter.ts",
@@ -182,7 +208,9 @@
         "src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts",
         "src/types/supabase.ts"
       ],
-      "exports": ["createInfraAdapter"]
+      "exports": [
+        "createInfraAdapter"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/constants/databaseBootstrap.ts",
@@ -219,8 +247,12 @@
     {
       "path": "src/features/platform-infrastructure/domain/createSupabaseAuthWorkload.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/features/platform-infrastructure/constants/supabase.ts"],
-      "exports": ["createSupabaseAuthWorkload"]
+      "dependencies": [
+        "src/features/platform-infrastructure/constants/supabase.ts"
+      ],
+      "exports": [
+        "createSupabaseAuthWorkload"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/domain/createSupabaseDatabaseBackupWorkload.ts",
@@ -230,7 +262,9 @@
         "src/features/platform-infrastructure/constants/supabase.ts",
         "src/features/platform-infrastructure/domain/createSupabaseS3Values.ts"
       ],
-      "exports": ["createSupabaseDatabaseBackupWorkload"]
+      "exports": [
+        "createSupabaseDatabaseBackupWorkload"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/domain/createSupabaseDatabaseDataRestoreWorkload.ts",
@@ -240,13 +274,17 @@
         "src/features/platform-infrastructure/constants/supabase.ts",
         "src/features/platform-infrastructure/domain/createSupabaseS3Values.ts"
       ],
-      "exports": ["createSupabaseDatabaseDataRestoreWorkload"]
+      "exports": [
+        "createSupabaseDatabaseDataRestoreWorkload"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/domain/createSupabaseDatabasePersistence.ts",
       "isEntrypoint": false,
       "dependencies": [],
-      "exports": ["createSupabaseDatabasePersistence"]
+      "exports": [
+        "createSupabaseDatabasePersistence"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/domain/createSupabaseDatabaseRestore.ts",
@@ -255,19 +293,27 @@
         "src/features/platform-infrastructure/constants/recovery.ts",
         "src/features/platform-infrastructure/domain/createSupabaseS3Values.ts"
       ],
-      "exports": ["createSupabaseDatabaseRestore"]
+      "exports": [
+        "createSupabaseDatabaseRestore"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/domain/createSupabaseOperationalWorkloads.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/features/platform-infrastructure/constants/supabase.ts"],
-      "exports": ["createSupabaseOperationalWorkloads"]
+      "dependencies": [
+        "src/features/platform-infrastructure/constants/supabase.ts"
+      ],
+      "exports": [
+        "createSupabaseOperationalWorkloads"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/domain/createSupabaseS3Values.ts",
       "isEntrypoint": false,
       "dependencies": [],
-      "exports": ["createSupabaseS3Values"]
+      "exports": [
+        "createSupabaseS3Values"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/domain/createSupabaseStorageWorkload.ts",
@@ -276,7 +322,9 @@
         "src/features/platform-infrastructure/constants/supabase.ts",
         "src/features/platform-infrastructure/domain/createSupabaseS3Values.ts"
       ],
-      "exports": ["createSupabaseStorageWorkload"]
+      "exports": [
+        "createSupabaseStorageWorkload"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts",
@@ -293,25 +341,37 @@
         "src/features/platform-infrastructure/domain/createSupabaseOperationalWorkloads.ts",
         "src/features/platform-infrastructure/domain/createSupabaseStorageWorkload.ts"
       ],
-      "exports": ["createSupabaseWorkloads"]
+      "exports": [
+        "createSupabaseWorkloads"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/domain/resolveSupabaseDesiredState.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/types/supabase.ts"],
-      "exports": ["resolveSupabaseDesiredState"]
+      "dependencies": [
+        "src/types/supabase.ts"
+      ],
+      "exports": [
+        "resolveSupabaseDesiredState"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/utils/resolveSupabaseControlPlaneUrl.ts",
       "isEntrypoint": false,
       "dependencies": [],
-      "exports": ["resolveSupabaseControlPlaneUrl"]
+      "exports": [
+        "resolveSupabaseControlPlaneUrl"
+      ]
     },
     {
       "path": "src/features/platform-infrastructure/utils/validateSupabaseBootstrapCredentials.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/types/supabase.ts"],
-      "exports": ["validateSupabaseBootstrapCredentials"]
+      "dependencies": [
+        "src/types/supabase.ts"
+      ],
+      "exports": [
+        "validateSupabaseBootstrapCredentials"
+      ]
     },
     {
       "path": "src/index.ts",
@@ -329,31 +389,41 @@
     {
       "path": "src/infraAdapter.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/supabaseAuthWorkload.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts"],
+      "dependencies": [
+        "src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/supabaseBootstrapCredentials.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/supabaseControlPlane.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/supabaseLifecycle.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
@@ -367,49 +437,65 @@
     {
       "path": "src/supabaseNativeHealth.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts"],
+      "dependencies": [
+        "src/features/platform-infrastructure/domain/createSupabaseWorkloads.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/supabaseObjectStorageOwnership.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/supabasePersistence.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/supabasePersistenceCredentials.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/supabaseRoleBackupFilter.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/supabaseRuntimeEndpoints.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/supabaseStudioHealth.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/supabaseVaultBootstrap.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
@@ -438,8 +524,12 @@
         "line": 15,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
-      "relatedSymbols": ["SupabaseControlPlane"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "SupabaseControlPlane"
+      ],
       "signatures": [
         {
           "label": "(options?: FetchSupabaseControlPlaneOptions) => SupabaseControlPlane",
@@ -470,8 +560,12 @@
         "line": 23,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
-      "relatedSymbols": ["SupabaseAdapterOptions"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "SupabaseAdapterOptions"
+      ],
       "signatures": [
         {
           "label": "(options?: SupabaseAdapterOptions) => InfraServiceAdapter",
@@ -502,7 +596,9 @@
         "line": 5,
         "column": 14
       },
-      "exportPaths": ["src/index.ts"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
       "relatedSymbols": [],
       "signatures": [],
       "members": [],
@@ -520,8 +616,12 @@
         "line": 20,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
-      "relatedSymbols": ["SupabaseControlPlane"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "SupabaseControlPlane"
+      ],
       "signatures": [],
       "members": [
         {
@@ -546,8 +646,12 @@
         "line": 9,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
-      "relatedSymbols": ["SupabaseControlPlaneRequest"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "SupabaseControlPlaneRequest"
+      ],
       "signatures": [],
       "members": [
         {
@@ -593,7 +697,9 @@
         "line": 3,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
       "relatedSymbols": [],
       "signatures": [],
       "members": [

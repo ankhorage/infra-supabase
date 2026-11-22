@@ -1,5 +1,11 @@
 # @ankhorage/supabase
 
+## 0.6.1
+
+### Patch Changes
+
+- 99b041f: Upgrade published Ankhorage dependencies and use the canonical Devtools CI impact workflow.
+
 ## 0.6.0
 
 ### Minor Changes

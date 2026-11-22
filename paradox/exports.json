@@ -11,8 +11,12 @@
       "line": 15,
       "column": 1
     },
-    "exportPaths": ["src/index.ts"],
-    "relatedSymbols": ["SupabaseControlPlane"],
+    "exportPaths": [
+      "src/index.ts"
+    ],
+    "relatedSymbols": [
+      "SupabaseControlPlane"
+    ],
     "signatures": [
       {
         "label": "(options?: FetchSupabaseControlPlaneOptions) => SupabaseControlPlane",
@@ -43,8 +47,12 @@
       "line": 23,
       "column": 1
     },
-    "exportPaths": ["src/index.ts"],
-    "relatedSymbols": ["SupabaseAdapterOptions"],
+    "exportPaths": [
+      "src/index.ts"
+    ],
+    "relatedSymbols": [
+      "SupabaseAdapterOptions"
+    ],
     "signatures": [
       {
         "label": "(options?: SupabaseAdapterOptions) => InfraServiceAdapter",
@@ -75,7 +83,9 @@
       "line": 5,
       "column": 14
     },
-    "exportPaths": ["src/index.ts"],
+    "exportPaths": [
+      "src/index.ts"
+    ],
     "relatedSymbols": [],
     "signatures": [],
     "members": [],
@@ -93,8 +103,12 @@
       "line": 20,
       "column": 1
     },
-    "exportPaths": ["src/index.ts"],
-    "relatedSymbols": ["SupabaseControlPlane"],
+    "exportPaths": [
+      "src/index.ts"
+    ],
+    "relatedSymbols": [
+      "SupabaseControlPlane"
+    ],
     "signatures": [],
     "members": [
       {
@@ -119,8 +133,12 @@
       "line": 9,
       "column": 1
     },
-    "exportPaths": ["src/index.ts"],
-    "relatedSymbols": ["SupabaseControlPlaneRequest"],
+    "exportPaths": [
+      "src/index.ts"
+    ],
+    "relatedSymbols": [
+      "SupabaseControlPlaneRequest"
+    ],
     "signatures": [],
     "members": [
       {
@@ -166,7 +184,9 @@
       "line": 3,
       "column": 1
     },
-    "exportPaths": ["src/index.ts"],
+    "exportPaths": [
+      "src/index.ts"
+    ],
     "relatedSymbols": [],
     "signatures": [],
     "members": [
